@@ -47,32 +47,46 @@ var Média = (aluno[0].Matemática + aluno[1].Matemática + aluno[2].Matemática
 
 console.log("Média dos alunos no total: ", Média);
 
-if (aluno[0].Matemática >= 7){
-  console.log(aluno[0].nome, "Aprovado(a)");
-} else {
-  console.log(aluno[0].nome, "Reprovado(a)");
+function resultado(aluno,nota){
+  if (nota >= 7){
+    return `o(a) ${aluno} passou`;
+  } else {
+    return `o(a) ${aluno} não passou`;
+  }
 }
 
-if (aluno[1].Matemática >= 7){
-  console.log(aluno[1].nome, "Aprovado(a)");
-} else {
-  console.log(aluno[1].nome, "Reprovado(a)");
-}
+console.log(resultado(aluno[0].nome, aluno[0].Matemática));
+console.log(resultado(aluno[1].nome, aluno[1].Matemática));
+console.log(resultado(aluno[2].nome, aluno[2].Matemática));
+console.log(resultado(aluno[3].nome, aluno[3].Matemática));
+console.log(resultado(aluno[4].nome, aluno[4].Matemática));
 
-if (aluno[2].Matemática >= 7){
-  console.log(aluno[2].nome, "Aprovado(a)");
-} else {
-  console.log(aluno[2].nome, "Reprovado(a)");
-}
+// if (aluno[0].Matemática >= 7){
+//   console.log(aluno[0].nome, "Aprovado(a)");
+// } else {
+//   console.log(aluno[0].nome, "Reprovado(a)");
+// }
 
-if (aluno[3].Matemática >= 7){
-  console.log(aluno[3].nome, "Aprovado(a)");
-} else {
-  console.log(aluno[3].nome, "Reprovado(a)");
-}
+// if (aluno[1].Matemática >= 7){
+//   console.log(aluno[1].nome, "Aprovado(a)");
+// } else {
+//   console.log(aluno[1].nome, "Reprovado(a)");
+// }
 
-if (aluno[4].Matemática >= 7){
-  console.log(aluno[4].nome, "Aprovado(a)");
-} else {
-  console.log(aluno[4].nome, "Reprovado(a)");
-}
+// if (aluno[2].Matemática >= 7){
+//   console.log(aluno[2].nome, "Aprovado(a)");
+// } else {
+//   console.log(aluno[2].nome, "Reprovado(a)");
+// }
+
+// if (aluno[3].Matemática >= 7){
+//   console.log(aluno[3].nome, "Aprovado(a)");
+// } else {
+//   console.log(aluno[3].nome, "Reprovado(a)");
+// }
+
+// if (aluno[4].Matemática >= 7){
+//   console.log(aluno[4].nome, "Aprovado(a)");
+// } else {
+//   console.log(aluno[4].nome, "Reprovado(a)");
+// }
